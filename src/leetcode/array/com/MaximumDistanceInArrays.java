@@ -26,4 +26,17 @@ The integers in the m arrays will be in the range of [-10000, 10000].
  */
 public class MaximumDistanceInArrays {
 
+	public static int maximumDistanceInArrays(int  [] nums )
+	{
+		
+		return 0;
+	}
+	
+	
+	 public static void main(String []args)
+	 {
+		 int []nums = {0,0,1,0,0};
+		 System.out.print(maximumDistanceInArrays(nums));
+		 
+	 }
 }
