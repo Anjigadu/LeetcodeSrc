@@ -1,5 +1,8 @@
 package leetcode.array.com;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * https://leetcode.com/problems/maximum-distance-in-arrays/#/description
 Given m arrays, and each array is sorted in ascending order. Now you can pick up 
@@ -26,7 +29,7 @@ The integers in the m arrays will be in the range of [-10000, 10000].
  */
 public class MaximumDistanceInArrays {
 
-	public static int maximumDistanceInArrays(int  [] nums )
+	public static int maximumDistanceInArrays( List<List<Integer>> nums )
 	{
 		
 		return 0;
@@ -35,7 +38,8 @@ public class MaximumDistanceInArrays {
 	
 	 public static void main(String []args)
 	 {
-		 int []nums = {0,0,1,0,0};
+		 
+		 List<List<Integer>> nums = new ArrayList<List<Integer>>();
 		 System.out.print(maximumDistanceInArrays(nums));
 		 
 	 }
