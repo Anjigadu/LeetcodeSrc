@@ -1,8 +1,5 @@
 package leetcode.array.com;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /*
  * https://leetcode.com/problems/maximum-distance-in-arrays/#/description
 Given m arrays, and each array is sorted in ascending order. Now you can pick up 
