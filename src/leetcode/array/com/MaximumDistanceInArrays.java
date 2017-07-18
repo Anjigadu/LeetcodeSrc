@@ -29,18 +29,39 @@ The integers in the m arrays will be in the range of [-10000, 10000].
  */
 public class MaximumDistanceInArrays {
 
-	public static int maximumDistanceInArrays( List<List<Integer>> nums )
+	public static int maximumDistanceInArrays( int [][] nums )
 	{
+		int length = nums.length;
+		int [][] test = new int[length][2];
 		
-		return 0;
+		for(int i =0 ; i< length ; i++){
+			test[i][0] = nums[i][0];
+			if(nums[i].length > 1){
+				test[i][1] = nums[i][nums[i].length -1];
+			}
+		}
+		
+		int min = test[0][0];
+		int max = test[0][1]; 
+		for(int i = 0; i < test.length - 1 ; i++){
+			if( min >  test[i+1][0]){
+				min = test[i+1][0];
+			}
+			if(max < test[i+1][1]){
+				max = test[i+1][1];
+			}
+		}
+		
+		System.out.println("max: " + max + ", min: " + min );
+		
+		return max - min;
 	}
 	
 	
 	 public static void main(String []args)
 	 {
-		 
-		 List<List<Integer>> nums = new ArrayList<List<Integer>>();
-		 System.out.print(maximumDistanceInArrays(nums));
+		 int [][] arr = {{1,2,3},{4,5}, {1,2,3}};
+		 System.out.println(maximumDistanceInArrays(arr));
 		 
 	 }
 }
