@@ -13,6 +13,24 @@ package leetcode.array.com;
 	It doesn't matter what you leave beyond the new length.
  */
 
+
+
+/*/
+ *  https://stackoverflow.com/questions/17967114/how-to-efficiently-remove-duplicates-from-an-array-without-using-set
+ *  
+ *  
+There exists many solution of this problem.
+
+1. The sort approach
+2. You sort your array and resolve only unique items
+3. The set approach
+	You declare a HashSet where you put all item then you have only unique ones.
+You create a boolean array that represent the items all ready returned, (this depend on your data in the array).
+If you deal with large amount of data i would pick the 1. solution. As you do not allocate additional memory and 
+sorting is quite fast. For small set of data the complexity would be n^2 but for large i will be n log n.
+ * 
+ */
+
 public class RemoveDuplicatesFromSortedArray {
 
 	public static int removeDuplicates(int[] nums) {
